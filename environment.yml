@@ -1,0 +1,25 @@
+# Eugene OpenAPI Proxy - Conda 32-bit Environment
+# 
+# 생성:
+#   conda env create -f environment.yml
+#
+# 활성화:
+#   conda activate eugene32
+#
+# 주의: 반드시 32비트 환경이어야 합니다.
+#   set CONDA_SUBDIR=win-32
+#   conda env create -f environment.yml
+
+name: eugene32
+
+channels:
+  - defaults
+  - conda-forge
+
+dependencies:
+  - python=3.9
+  - pip
+
+  - pip:
+    - PyQt5>=5.15
+    - pywin32>=300
